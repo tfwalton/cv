@@ -2,7 +2,7 @@
 name: Tom
 surname: Fiocco Walton
 address: The University of Western Australia
-position: PhD Candidate and Provisional Psychologist (Clinical Psychology Trainee)
+position: Clinical Psychology Registrar
 pronouns: he/him
 phone: 0466 726 957
 email: Tom.FioccoWalton@research.uwa.edu.au
@@ -11,7 +11,7 @@ date: "`r format(Sys.time(), '%B %Y')`"
 headcolor: 414141
 output:
   vitae::awesomecv: default
-  
+
 ---
 
 <!-- The CV must:
@@ -42,25 +42,34 @@ tribble(
 ) %>%
   detailed_entries(Degree, Year, Institution, Where)
 ```
-# Clinical skills
 
+# Skills
+
+## Clinical
+
+\footnotesize
 - Delivery of evidence-based psychotherapy including dialectical behaviour therapy (DBT), acceptance and commitment therapy (ACT), cognitive behavioural therapy (CBT), CBT for insomnia (CBT-I), exposure with response prevention (ERP), and social skills training.
 - Clinical assessment with unstructured and semi-structured interviews including risk assessment and safety planning
 - Assessment with standardised psychometric instruments including measures of mental health symptomatology, emotional functioning, neurodevelopmental features, and personality inventories
 - Administration, interpretation, and report writing for cognitive testing including WPPSI, WISC, WAIS, and WIAT
 - Administration of neuropsychological tests including MoCA, CoCA, RBANS, DKEFS, NEPSY, WMS, WRAML
+\normalsize
 
-# Research skills
+## Research
 
+\footnotesize
 - Systematic review, study design, quantitative statistical analysis, and academic writing and communication
 - Expertise in insomnia disorder and advanced statistical methods for analysing congruence/discrepancy in psychological constructs
 - Software packages including SPSS, Visual basic for Excel, R and R Markdown including package development
 - Open science practices including pre-registration and computationally reproducible manuscripts
+\normalsize
 
-# Procedural skills
+## Procedural
 
+\footnotesize
 - Working in multidisciplinary teams of medical and allied health
 - Working within the NDIS system; private hospital settings; visits across clinic, school, home, and video-conference
+\normalsize
 
 # Awards and Prizes
 
@@ -73,6 +82,18 @@ tribble(
 ) %>% brief_entries(Type, Year
                     )
   
+```
+
+# Work experience
+
+```{r}
+
+tribble(
+  ~Role, ~Year, ~Company, ~Where, ~Desc,
+    "Provisional Psychologist and Clinical Psychology Registrar", "2/4/2024 -- Present", "Patches Australia", "Perth, Australia", c("Provided individual psychotherapy and assessment to children (6+) and adults with neurodevelopmental disorders including Autism, ADHD, and FASD, in addition to comorbid psychological disorders", "Worked as a part of a multidisciplinary team with paediatricians, occupational therapists, speech pathologists, exercise physiologists, and physiotherapists", "Role is part-time 8 hours per week"
+  )
+) %>%
+  detailed_entries(Role, Year, Company, Where, Desc)
 ```
 
 # Placement Experience
@@ -98,7 +119,7 @@ tribble(
     "Placement was part-time comprising two days per week"
     ),
 
-    "Clinical Psychology Trainee", "15/12/2023 -- 1/4/2024", "Patches Australia", "Perth, Australia", c("Provided individual psychotherapy and assessment to children (6+) and adults with neurodevelopmental disorders including Autism, ADHD, and FASD, in addition to comorbid psychological disorders", "Worked as a part of a multidisciplinary team with paediatricians, occupational therapists, speech pathologists, exercise physiologists, and physiotherapists", "Placement was part-time comprising three days per week"
+    "Clinical Psychology Trainee", "15/12/2023 -- 1/4/2024", "Patches Australia", "Perth, Australia", c("Provide individual psychotherapy and assessment to children and adults with neurodevelopmental and psychological disorders ", "Placement was part-time comprising three days per week"
   )
 ) %>%
   detailed_entries(Role, Year, Company, Where, Desc)
