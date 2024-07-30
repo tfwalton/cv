@@ -76,21 +76,21 @@ tribble(
 ```{r}
 tribble(
   ~Year, ~Type,
-  2020, "Australian Government Research Training Program Scholarship, awarded to support students undertaking higher degrees by research",
+  2021, "Australian Government Research Training Program Scholarship, awarded to support students undertaking higher degrees by research",
   2020, "Australian Psychological Society Fourth Year Prize, University of Western Australia, awarded for highest mark in fourth year psychology course",
-  2020, "H.L. Fowler Prize, University of Western Australia,, awarded for best honours thesis in psychology",
+  2020, "H.L. Fowler Prize, University of Western Australia, awarded for best honours thesis in psychology",
 ) %>% brief_entries(Type, Year
                     )
   
 ```
-
+\newpage
 # Work experience
 
 ```{r}
 
 tribble(
   ~Role, ~Year, ~Company, ~Where, ~Desc,
-    "Provisional Psychologist and Clinical Psychology Registrar", "2/4/2024 -- Present", "Patches Australia", "Perth, Australia", c("Provided individual psychotherapy and assessment to children (6+) and adults with neurodevelopmental disorders including Autism, ADHD, and FASD, in addition to comorbid psychological disorders", "Worked as a part of a multidisciplinary team with paediatricians, occupational therapists, speech pathologists, exercise physiologists, and physiotherapists", "Role is part-time 8 hours per week"
+    "Provisional Psychologist and Clinical Psychology Registrar", "2/4/2024 -- Present", "Patches Australia", "Perth, Australia", c("Provide individual psychotherapy and assessment to children (6+) and adults with neurodevelopmental disorders including Autism, ADHD, and FASD, in addition to comorbid psychological disorders", "Work as a part of a multidisciplinary team with paediatricians, occupational therapists, speech pathologists, exercise physiologists, and physiotherapists", "Role is part-time 8 hours per week"
   )
 ) %>%
   detailed_entries(Role, Year, Company, Where, Desc)
@@ -119,7 +119,7 @@ tribble(
     "Placement was part-time comprising two days per week"
     ),
 
-    "Clinical Psychology Trainee", "15/12/2023 -- 1/4/2024", "Patches Australia", "Perth, Australia", c("Provide individual psychotherapy and assessment to children and adults with neurodevelopmental and psychological disorders ", "Placement was part-time comprising three days per week"
+    "Clinical Psychology Trainee", "15/12/2023 -- 1/4/2024", "Patches Australia", "Perth, Australia", c("Provided individual psychotherapy and assessment to children and adults with neurodevelopmental and psychological disorders ", "Placement was part-time comprising three days per week"
   )
 ) %>%
   detailed_entries(Role, Year, Company, Where, Desc)
@@ -133,9 +133,9 @@ tribble(
   ~Role, ~Year, ~Company, ~Where, ~Desc,
   
   
-    "Sleep Scientist", "2013--Present", "Cardio Respiratory Sleep", "Perth, Australia", c("Polysomnography (PSG) including overnight diagnostic sleep studies, CPAP and BiPAP titrations, Multiple sleep latency test (MSLT), and maintenance of wake tests (MWT)", "Consultation with patients during trials of CPAP therapy", "Training of new staff members in PSG scoring and analysis"),
+    "Sleep Scientist", "2013--2024", "Cardio Respiratory Sleep", "Perth, Australia", c("Polysomnography (PSG) including overnight diagnostic sleep studies, CPAP and BiPAP titrations, Multiple sleep latency test (MSLT), and maintenance of wake tests (MWT)", "Consultation with patients during trials of CPAP therapy", "Training of new staff members in PSG scoring and analysis"),
   
-  "Peer Supporter", "2021-2022", "The Living Room, The University of Western Australia", "Perth, Australia", c("Provided support to UWA students with varying levels of emotional distress in a low-barrier mental health space", " Collaboratively developed self-care plans, safety plans with Living Room guests; conducted brief interventions (sleep, alcohol)"
+  "Peer Supporter", "2021--2022", "The Living Room, The University of Western Australia", "Perth, Australia", c("Provided support to UWA students with varying levels of emotional distress in a low-barrier mental health space", " Collaboratively developed self-care plans, safety plans with Living Room guests; conducted brief interventions (sleep, alcohol)"
     )
   )%>%
   detailed_entries(Role, Year, Company, Where, Desc)
