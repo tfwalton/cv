@@ -2,7 +2,7 @@
 name: Tom
 surname: Fiocco Walton
 address: The University of Western Australia
-position: Clinical Psychology Registrar
+position: Clinical Psychologist Registrar (PSYC0002475278)
 pronouns: he/him
 phone: 0466 726 957
 email: Tom.FioccoWalton@research.uwa.edu.au
@@ -48,7 +48,7 @@ tribble(
 ## Clinical
 
 \footnotesize
-- Delivery of evidence-based psychotherapy including dialectical behaviour therapy (DBT), acceptance and commitment therapy (ACT), cognitive behavioural therapy (CBT), CBT for insomnia (CBT-I), exposure with response prevention (ERP), and social skills training.
+- Delivery of evidence-based psychotherapy including dialectical behaviour therapy (DBT), acceptance and commitment therapy (ACT), cognitive behavioural therapy (CBT), CBT for insomnia (CBT-I), exposure with response prevention (ERP), and social skills training, across the lifespan.
 - Clinical assessment with unstructured and semi-structured interviews including risk assessment and safety planning
 - Assessment with standardised psychometric instruments including measures of mental health symptomatology, emotional functioning, neurodevelopmental features, and personality inventories
 - Administration, interpretation, and report writing for cognitive testing including WPPSI, WISC, WAIS, and WIAT
@@ -60,7 +60,7 @@ tribble(
 \footnotesize
 - Systematic review, study design, quantitative statistical analysis, and academic writing and communication
 - Expertise in insomnia disorder and advanced statistical methods for analysing congruence/discrepancy in psychological constructs
-- Software packages including SPSS, Visual basic for Excel, R and R Markdown including package development
+- Programming languages and software packages including R, R Markdown, SPSS, and Visual basic for Excel
 - Open science practices including pre-registration and computationally reproducible manuscripts
 \normalsize
 
@@ -90,9 +90,9 @@ tribble(
 
 tribble(
   ~Role, ~Year, ~Company, ~Where, ~Desc,
-    "Provisional Psychologist and Clinical Psychology Registrar", "2/4/2024 -- Present", "Patches Australia", "Perth, Australia", c("Provide individual psychotherapy and assessment to children (6+) and adults with neurodevelopmental disorders including Autism, ADHD, and FASD, in addition to comorbid psychological disorders", "Work as a part of a multidisciplinary team with paediatricians, occupational therapists, speech pathologists, exercise physiologists, and physiotherapists", "Role is part-time 8 hours per week"
-  )
-) %>%
+    "Provisional Psychologist", "2/4/2024 -- 1/7/2024", "Patches Australia", "Perth, Australia", c("Provide individual psychotherapy and assessment to children (6+) and adults with neurodevelopmental disorders including Autism, ADHD, and FASD, and co-ocurring psychological disorders", "Work as a part of a multidisciplinary team with paediatricians, occupational therapists, speech pathologists, exercise physiologists, and physiotherapists", "Liaise and coordinate care with parents, teachers, health professionals, and others involved in the life of a young person", "Part-time role: 0.2 FTE"),
+    "Clinical Psychologist Registrar", "1/7/2024 -- Present", "Patches Australia", "Perth, Australia", c("As above", "Role is 0.3 FTE")
+)%>%
   detailed_entries(Role, Year, Company, Where, Desc)
 ```
 
@@ -119,7 +119,7 @@ tribble(
     "Placement was part-time comprising two days per week"
     ),
 
-    "Clinical Psychology Trainee", "15/12/2023 -- 1/4/2024", "Patches Australia", "Perth, Australia", c("Provided individual psychotherapy and assessment to children and adults with neurodevelopmental and psychological disorders ", "Placement was part-time comprising three days per week"
+    "Clinical Psychology Trainee", "15/12/2023 -- 1/4/2024", "Patches Australia", "Perth, Australia", c("Provided individual psychology capacity building support and assessment to children and adults with neurodevelopmental and psychological disorders ", "Placement was part-time comprising three days per week"
   )
 ) %>%
   detailed_entries(Role, Year, Company, Where, Desc)
@@ -165,3 +165,8 @@ tribble(
   detailed_entries(Role, Year, Company, Where, Desc)
 ```
 
+# Publications
+
+```{r}
+bibliography_entries("publications.bib")
+```
