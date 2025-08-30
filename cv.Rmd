@@ -2,7 +2,7 @@
 name: Tom
 surname: Fiocco Walton
 address: The University of Western Australia
-position: Clinical Psychologist Registrar (PSYC0002475278)
+position: Clinical Psychologist Registrar (PSYC0002475278) & Research Officer
 pronouns: he/him
 phone: 0466 726 957
 email: Tom.FioccoWalton@research.uwa.edu.au
@@ -13,14 +13,6 @@ output:
   vitae::awesomecv: default
 
 ---
-
-<!-- The CV must:
-1. explain any period since obtaining qualifications where you have not practised
-2. be in chronological order
-be signed and dated with the statemnt "This CV is true and correct as at 
-be the original signed cv
--->
-
 
 ```{r setup, include=FALSE, echo=FALSE, warning=FALSE, message = FALSE}
 library(vitae)
@@ -37,9 +29,14 @@ knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 library(tibble)
 tribble(
   ~ Degree, ~ Year, ~ Institution, ~ Where,
-  "Bachelor of Science with First Class Honours in Psychology. Thesis title: Sleep Discrepancy and Insomnia: An Investigation Using Polynomial Regression with Response Surface Analysis", "2020", "The University of Western Australia", "Perth, Australia",
-  "Doctor of Philosophy and Master of Clinical Psychology. Thesis title: Sleep Discrepancy: A Conceptual and Methodological Investigation", "ongoing", "The University of Western Australia", "Perth, Australia",
-) %>%
+  "Bachelor of Science with First Class Honours in Psychology. Thesis title: Sleep Discrepancy and Insomnia: An Investigation Using Polynomial Regression with Response Surface Analysis",
+  "2020",
+  "The University of Western Australia",
+  "Perth, Australia",
+  "Doctor of Philosophy and Master of Clinical Psychology. Thesis title: (How) should we measure sleep discrepancy?",
+  "2025",
+  "The University of Western Australia",
+  "Perth, Australia") %>%
   detailed_entries(Degree, Year, Institution, Where)
 ```
 
@@ -51,8 +48,7 @@ tribble(
 - Delivery of evidence-based psychotherapy including dialectical behaviour therapy (DBT), acceptance and commitment therapy (ACT), cognitive behavioural therapy (CBT), CBT for insomnia (CBT-I), exposure with response prevention (ERP), and social skills training, across the lifespan.
 - Clinical assessment with unstructured and semi-structured interviews including risk assessment and safety planning
 - Assessment with standardised psychometric instruments including measures of mental health symptomatology, emotional functioning, neurodevelopmental features, and personality inventories
-- Administration, interpretation, and report writing for cognitive testing including WPPSI, WISC, WAIS, and WIAT
-- Administration of neuropsychological tests including MoCA, CoCA, RBANS, DKEFS, NEPSY, WMS, WRAML
+- Administration and interpretation of psychometric tests including WPPSI, WISC, WAIS, and WIAT
 \normalsize
 
 ## Research
@@ -60,15 +56,16 @@ tribble(
 \footnotesize
 - Systematic review, study design, quantitative statistical analysis, and academic writing and communication
 - Expertise in insomnia disorder and advanced statistical methods for analysing congruence/discrepancy in psychological constructs
-- Programming languages and software packages including R, R Markdown, SPSS, and Visual basic for Excel
+- Programming languages and software packages including R, R Markdown, LaTeX, SPSS, and Visual basic for Excel
 - Open science practices including pre-registration and computationally reproducible manuscripts
 \normalsize
 
-## Procedural
+## Teaching
 
 \footnotesize
-- Working in multidisciplinary teams of medical and allied health
-- Working within the NDIS system; private hospital settings; visits across clinic, school, home, and video-conference
+- Design and delivery of engaging lectures, integrating technical and theoretical insight with applied clinical experience
+- Facilitation of small-group learning, supporting student skill development through discussion, feedback, and assessment guidance
+
 \normalsize
 
 # Awards and Prizes
@@ -79,48 +76,81 @@ tribble(
   2021, "Australian Government Research Training Program Scholarship, awarded to support students undertaking higher degrees by research",
   2020, "Australian Psychological Society Fourth Year Prize, University of Western Australia, awarded for highest mark in fourth year psychology course",
   2020, "H.L. Fowler Prize, University of Western Australia, awarded for best honours thesis in psychology",
+  2018, "School of Psychological Science Unit Award for highest performing student in Adult Psychopathology"
 ) %>% brief_entries(Type, Year
                     )
   
 ```
-\newpage
-# Work experience
+
+# Research experience
 
 ```{r}
 
 tribble(
   ~Role, ~Year, ~Company, ~Where, ~Desc,
-    "Provisional Psychologist", "2/4/2024 -- 1/7/2024", "Patches Australia", "Perth, Australia", c("Provide individual psychotherapy and assessment to children (6+) and adults with neurodevelopmental disorders including Autism, ADHD, and FASD, and co-ocurring psychological disorders", "Work as a part of a multidisciplinary team with paediatricians, occupational therapists, speech pathologists, exercise physiologists, and physiotherapists", "Liaise and coordinate care with parents, teachers, health professionals, and others involved in the life of a young person", "Part-time role: 0.2 FTE"),
-    "Clinical Psychologist Registrar", "1/7/2024 -- Present", "Patches Australia", "Perth, Australia", c("As above", "Role is 0.3 FTE")
-)%>%
+  "Research Officer (with Dr Cele Richardson)", "2025", "School of Psychological Science, The University of Western Australia", "Perth, Australia", c("Clinical trial assessing the psychological mechanisms underpinning improvements in depressive symptoms following treatment of sleep problems with online cognitive behavioural therapy for insomnia",
+    "Develop and maintain reproducible workflows within R to analyse and integrate study data from disparate sources including systems such as REDCap and Inquisit",
+    "Coordinate with data users to ensure alignment and accessibility of datasets",
+    "Consult with data users regarding statistical analysis of data",
+    "Use RStudio projects and Git for version control",
+    "Conduct clinical assessments for suicidality and risk of suicide and self-harm for study participants"
+    )
+  )%>%
   detailed_entries(Role, Year, Company, Where, Desc)
 ```
 
-# Placement Experience
+\newpage
+
+# Teaching experience
 
 ```{r}
 
 tribble(
   ~Role, ~Year, ~Company, ~Where, ~Desc,
-  "Clinical Psychology Trainee", "1/03/2022 -- 15/12/2022", "The Robin Winkler Clinic", "Perth, Australia", c(
+  "Guest lecturer", "2025", "School of Medicine, The University of Western Australia", "Perth, Australia", c("Teaching for a series of multidisciplinary seminars on the cognitive and behavioural treatment of insomnia and circadian rhythm disorders", "Deliver lectures focussed on sleep physiology and the diagnosis, pathophysiology, assessment, and treatment of insonmnia and circadian rhythm disorders", "Guide students through case studies, facilitating critical thinking and application of theoretical concepts."
+    )
+  )%>%
+  detailed_entries(Role, Year, Company, Where, Desc)
+```
+
+```{r}
+
+tribble(
+  ~Role, ~Year, ~Company, ~Where, ~Desc,
+  "Laboratory Demonstrator", "2021, 2022, 2025", "School of Psychological Science, The University of Western Australia", "Perth, Australia", c("Psychology: Mind and Brain (PSYC1101)", "Adult Psychopathology (PSYC2214)", "Introduction to Quantitative Methods in Psychology (PSYC2203)", "Delivered tutorial content, facilitated group discussions and provided support for specific learning needs", "evaluated and provided feedback on student lab reports and assignments" 
+                                                                                                                                               
+    )
+  )%>%
+  detailed_entries(Role, Year, Company, Where, Desc)
+```
+
+# Clinical experience
+
+```{r}
+
+tribble(
+  ~Role, ~Year, ~Company, ~Where, ~Desc,
+    "Clinical Psychologist Registrar", "24/03/2025 -- Present", "Child & Adolescent Mental Health Service, Hillarys", "Perth, Australia", c("Provide psychotherapy, assessment, and care coordination for young people (<18) and families with moderate to severe, complex, or high-risk mental health concerns", "Collaborate within a multidisciplinary team with social workers, teachers, occupational therapists, and psychiatrists"),  
+  
+  
+      "Clinical Psychologist Registrar", "1/7/2024 -- Present", "Patches Australia", "Perth, Australia", c("Provide individual psychotherapy and assessment to children (6+) and adults with neurodevelopmental disorders including Autism, ADHD, and FASD, and co-ocurring psychological disorders"),
+
+  "Clinical Psychology Trainee", "15/12/2023 -- 1/4/2024", "Patches Australia", "Perth, Australia", c("Provided individual psychology capacity building support and assessment to children and adults with neurodevelopmental and psychological disorders"),
+
+  "Clinical Psychology Trainee", "13/03/2023 -- 29/08/2023", "Ramsay Clinic Hollywood", "Perth, Australia", c(
+    "Provided group therapy based in CBT, ACT, and positive psychology, and meal support as part of a outpatient eating disorders programme",
+    "Provided individual psychotherapy to inpatients presenting with misuse of alcohol and other substances, severe/treatment-refractory depression,      anxiety and panic disorder",
+    "Facilitated group dialectical behaviour therapy for outpatients presenting with borderline personality disorder or features thereof"),
+                                                                                                                                                                  
+    "Clinical Psychology Trainee", "1/03/2022 -- 15/12/2022", "The Robin Winkler Clinic", "Perth, Australia", c(
     "Provided individual cognitive behavioural therapy (CBT) and acceptance and committment therapy (ACT) for children (10+) and adults",
     "Provided neuropsychological assessments for typically and atypically ageing older adults in the Healthy Ageing Research Program (HARP)",
     "Provided brief sleep interventions for children with ADHD and other comorbid presentations",
     "Facilitated groups including CBT-I for insomnia in older adults, emotional regulation, and CBT for managing emotions",
     "Provided individual behavioural activation therapy for depression in adolescents",
-    "Provided neuropsychological assessments for the Dementia prevention and risk Management Program for Aboriginal Australians project (DAMPAA)",
-    "Placement was part-time comprising four days per week"
-    ),
+    "Provided neuropsychological assessments for the Dementia prevention and risk Management Program for Aboriginal Australians project (DAMPAA)")
 
-    "Clinical Psychology Trainee", "13/03/2023 -- 29/08/2023", "Ramsay Clinic Hollywood", "Perth, Australia", c(
-    "Provided group therapy based in CBT, ACT, and positive psychology, and meal support as part of a outpatient eating disorders programme",
-    "Provided individual psychotherapy to inpatients presenting with misuse of alcohol and other substances, severe/treatment-refractory depression,      anxiety and panic disorder",
-    "Facilitated group dialectical behaviour therapy for outpatients presenting with borderline personality disorder or features thereof",
-    "Placement was part-time comprising two days per week"
-    ),
 
-    "Clinical Psychology Trainee", "15/12/2023 -- 1/4/2024", "Patches Australia", "Perth, Australia", c("Provided individual psychology capacity building support and assessment to children and adults with neurodevelopmental and psychological disorders ", "Placement was part-time comprising three days per week"
-  )
 ) %>%
   detailed_entries(Role, Year, Company, Where, Desc)
 ```
@@ -132,22 +162,9 @@ tribble(
 tribble(
   ~Role, ~Year, ~Company, ~Where, ~Desc,
   
-  
-    "Sleep Scientist", "2013--2024", "Cardio Respiratory Sleep", "Perth, Australia", c("Polysomnography (PSG) including overnight diagnostic sleep studies, CPAP and BiPAP titrations, Multiple sleep latency test (MSLT), and maintenance of wake tests (MWT)", "Consultation with patients during trials of CPAP therapy", "Training of new staff members in PSG scoring and analysis"),
+  "Sleep Scientist", "2013--2024", "Cardio Respiratory Sleep", "Perth, Australia", c("Polysomnography (PSG) including overnight diagnostic sleep studies, CPAP and BiPAP titrations, Multiple sleep latency test (MSLT), and maintenance of wake tests (MWT)", "Consultation with patients during trials of CPAP therapy", "Training of new staff members in PSG scoring and analysis"),
   
   "Peer Supporter", "2021--2022", "The Living Room, The University of Western Australia", "Perth, Australia", c("Provided support to UWA students with varying levels of emotional distress in a low-barrier mental health space", " Collaboratively developed self-care plans, safety plans with Living Room guests; conducted brief interventions (sleep, alcohol)"
-    )
-  )%>%
-  detailed_entries(Role, Year, Company, Where, Desc)
-```
-
-# Teaching experience
-
-```{r}
-
-tribble(
-  ~Role, ~Year, ~Company, ~Where, ~Desc,
-  "Laboratory Demonstrator", "2021--2022", "School of Psychological Science, The University of Western Australia", "Perth, Australia", c("Psychology: Mind and Brain (PSYC1101)", "Adult Psychopathology (PSYC2214)", "Introduction to Quantitative Methods in Psychology (PSYC2203)"
     )
   )%>%
   detailed_entries(Role, Year, Company, Where, Desc)
@@ -170,3 +187,29 @@ tribble(
 ```{r}
 bibliography_entries("publications.bib")
 ```
+
+# Presentations
+
+```{r}
+bibliography_entries("presentations.bib")
+```
+
+# References
+
+
+
+\begin{multicols}{2}
+
+\textbf{Professor Romola Bucks}\newline
+    {School of Psychological Science}\newline
+    {University of Western Australia}\newline
+    {romola.bucks@uwa.edu.au}\newline
+    {+61 8 6488 0126}\newline
+
+\textbf{Dr Cele Richardson}\newline
+    {School of Psychological Science}\newline
+    {University of Western Australia}\newline
+    {cele.richardson@uwa.edu.au}\newline
+    {+61 8 6488 3141}\newline
+
+\end{multicols}
